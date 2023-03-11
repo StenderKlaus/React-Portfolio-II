@@ -16,7 +16,7 @@ const Home = () => {
         }}
         transition={{ duration: 1 }}
       >
-        Dipesh <font color="yellow">Malvia</font>
+        Klaus <font color="yellow">Stender</font>
       </motion.div>
       <motion.div
         class="desc"
@@ -28,10 +28,9 @@ const Home = () => {
           x: 0,
           scale: 1,
         }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 2 }}
       >
-        <font>I´m a Junior </font> MERN-FullStack <font>Web - Developer</font> based
-        in Hamburg, Germany
+        <font>Ich bin ein Junior </font> MERN-FullStack <font>Web - Developer</font> aus Hamburg.
       </motion.div>
     </div>
   );

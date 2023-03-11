@@ -3,38 +3,48 @@ import { Card } from "react-bootstrap";
 import { motion } from "framer-motion";
 import project1 from "../images/project1.jpg";
 import project2 from "../images/project2.jpg";
+import project3 from "../images/project3.jpg";
+import project4 from "../images/project4.jpg";
+import project5 from "../images/project5.jpg";
+import project6 from "../images/project6.jpg";
 
 const Projects = () => {
   const projectList = [
     {
       id: 1,
-      name: "Marketing site design & build",
+      name: " Tribute Page über Glenn Miller",
       imageUrl: project1,
+      githubURL: "https://github.com/StenderKlaus/newtribute",
     },
     {
       id: 2,
-      name: "Glide Utilities",
+      name: "Erstes Portfolio",
       imageUrl: project2,
+      githubURL: "https://github.com/StenderKlaus/Portfolio-KS",
     },
     {
       id: 3,
-      name: "Noton High Street Product",
-      imageUrl: project1,
+      name: "Semicolons - Linksammlung",
+      imageUrl: project3,
+      githubURL: "https://github.com/MarcelVoigt92/The-Semicolons-Link-Sammlung",
     },
     {
       id: 4,
-      name: "Gifts and Voucher Today",
-      imageUrl: project2,
+      name: "Cooking App",
+      imageUrl: project4,
+      githubURL: "https://github.com/StenderKlaus/lecook---cooking-App",
     },
     {
       id: 5,
-      name: "Productkart Studio",
-      imageUrl: project1,
+      name: "Musik Player App",
+      imageUrl: project5,
+      githubURL: "https://github.com/Hosam89/GIGA-CHAD",
     },
     {
       id: 6,
-      name: "Library Management",
-      imageUrl: project2,
+      name: "React Weather App",
+      imageUrl: project6,
+      githubURL: "https://github.com/StenderKlaus/Weather_APP/upload",
     },
   ];
 
@@ -57,7 +67,7 @@ const Projects = () => {
             <motion.div
               whileHover={{
                 scale: 1.1,
-                transition: { duration: 0.5 },
+                transition: { duration: 1 },
               }}
               key={item.id}
             >
@@ -65,8 +75,11 @@ const Projects = () => {
                 <Card.Img variant="top" src={item.imageUrl} />
                 <Card.Body>
                   <Card.Title>{item.name}</Card.Title>
+                  <button onclick={"item.githubURL"}> GitHub-Link </button>
                 </Card.Body>
+                
               </Card>
+              
             </motion.div>
           );
         })}

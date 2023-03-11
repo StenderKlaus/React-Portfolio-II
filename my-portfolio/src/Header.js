@@ -10,16 +10,24 @@ const Header = () => {
     <div className="header">
       <Navbar expand="lg" fixed="top">
         <Container>
-          <Navbar.Brand>Klaus Stender</Navbar.Brand>
+          <Navbar.Brand>KlaSt</Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
             <Nav className="ml-auto">
+
               <NavLink
                 to="/"
                 style={({ isActive }) => (isActive ? activeStyle : undefined)}
                 className="nav-link"
               >
                 Home
+              </NavLink>
+              <NavLink
+                to="/About"
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                className="nav-link"
+              >
+                About
               </NavLink>
               <NavLink
                 to="/projects"
@@ -35,13 +43,7 @@ const Header = () => {
               >
                 Services
               </NavLink>
-              <NavLink
-                to="/About"
-                style={({ isActive }) => (isActive ? activeStyle : undefined)}
-                className="nav-link"
-              >
-                About
-              </NavLink>
+              
               <NavLink
                 to="/Contact"
                 style={({ isActive }) => (isActive ? activeStyle : undefined)}
