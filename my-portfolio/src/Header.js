@@ -8,7 +8,7 @@ const Header = () => {
   };
   return (
     <div className="header">
-      <Navbar expand="lg" fixed="top">
+      <Navbar expand="lg" fixed="top" variant="dark">
         <Container>
           <Navbar.Brand>KlaSt</Navbar.Brand>
           <Navbar.Toggle />

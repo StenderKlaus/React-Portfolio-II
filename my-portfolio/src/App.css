@@ -244,7 +244,7 @@
   }
   
   .list-group-item a {
-    color: #fff;
+        color: #fafafa;
   }
   
   .list-group-item:hover {
@@ -256,5 +256,9 @@
     color: #fafafa;
   }
   .navbar-toggler {
+
     background-color: #ffffff;
+  }
+  .navbar-toggler-icon{
+    color: #fff !important;
   }

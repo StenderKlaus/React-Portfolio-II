@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Button, Col, Row, Form, ListGroup } from "react-bootstrap";
+//import emailjs from "emailjs/browser";
+
+
 
 const Contact = () => {
   const [validated, setValidated] = useState(false);
@@ -27,7 +30,7 @@ const Contact = () => {
           <div className="contact-form">
             <Form noValidate validated={validated} onSubmit={handleSubmit}>
               <Form.Group className="mb-3" controlId="validationCustom01">
-                <Form.Label>Name</Form.Label>
+                <Form.Label></Form.Label>
                 <Form.Control required type="text" placeholder="Name" />
               </Form.Group>
               <Form.Group className="mb-3" controlId="validationCustom02">
@@ -42,6 +45,57 @@ const Contact = () => {
             </Form>
           </div>
         </Col>
+
+{/** 
+
+const Contact = () => {
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+
+    // Reset form fields after submission
+    setName('');
+    setEmail('');
+    setMessage('');
+  }
+
+  return (
+    <Form onSubmit={handleSubmit}>
+      <FormGroup>
+        <Label for="name">Name:</Label>
+        <Input type="text" name="name" id="name" value={name} onChange={(e) => setName(e.target.value)} />
+      </FormGroup>
+      <FormGroup>
+        <Label for="email">Email:</Label>
+        <Input type="email" name="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+      </FormGroup>
+      <FormGroup>
+        <Label for="message">Message:</Label>
+        <Input type="textarea" name="message" id="message" value={message} onChange={(e) => setMessage(e.target.value)} />
+      </FormGroup>
+      <Button color="primary" type="submit">Send</Button>
+    </Form>
+  );
+}
+
+export default Contact; */}
+
+
+
+
+
+
         <Col>
           <div className="contact-data">
             <p>
