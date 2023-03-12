@@ -8,19 +8,15 @@ const Services = () => {
   const serviceList = [
     {
       id: 1,
-      name: "Consulting",
+      name: "Frontend",
       imageUrl: project2,
     },
     {
       id: 2,
-      name: "Web Application Development",
+      name: "Backend",
       imageUrl: project1,
     },
-    {
-      id: 3,
-      name: "Products Support",
-      imageUrl: project2,
-    },
+
   ];
 
   return (
@@ -62,3 +58,10 @@ const Services = () => {
 };
 
 export default Services;
+
+{/* <Card>
+                  <Card.Img variant="top" src={item.imageUrl} />
+                  <Card.Body>
+                    <Card.Title>{item.name}</Card.Title>
+                  </Card.Body>
+                </Card> */}
