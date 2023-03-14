@@ -9,7 +9,7 @@ const Services = () => {
     {
       id: 1,
       name: "Frontend",
-      imageUrl: project2,
+      // imageUrl: project2,
     },
     {
       id: 2,
@@ -42,13 +42,20 @@ const Services = () => {
                   transition: { duration: 0.5 },
                 }}
               >
-                <Card>
+                 <Card>
                   <Card.Img variant="top" src={item.imageUrl} />
                   <Card.Body>
                     <Card.Title>{item.name}</Card.Title>
+                    <ul>
+                      <li> HTML</li>
+                      
+                    </ul>
                   </Card.Body>
-                </Card>
+                </Card> 
+
+
               </motion.div>
+              
             );
           })}
         </div>
@@ -57,11 +64,7 @@ const Services = () => {
   );
 };
 
-export default Services;
 
-{/* <Card>
-                  <Card.Img variant="top" src={item.imageUrl} />
-                  <Card.Body>
-                    <Card.Title>{item.name}</Card.Title>
-                  </Card.Body>
-                </Card> */}
+
+
+export default Services;
