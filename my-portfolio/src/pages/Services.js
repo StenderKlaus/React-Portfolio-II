@@ -1,20 +1,34 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import { motion } from "framer-motion";
-import project1 from "../images/project1.jpg";
-import project2 from "../images/project2.jpg";
+
+import html from "../images/logo/html64.png";
+import css from "../images/logo/css.png";
+import gh from "../images/logo/gh.png";
+import bt from "../images/logo/bt.png";
+import js from "../images/logo/js.png";
+import node from "../images/logo/node.png";
+import sass from "../images/logo/sass.png";
+import lreact from "../images/logo/lreact.png";
+import firebase from "../images/logo/firebase.png";
+import express from "../images/logo/express.png";
+import mongoDB from "../images/logo/mongodb.png";
+import mysql from "../images/logo/mysql.png";
 
 const Services = () => {
   const serviceList = [
     {
       id: 1,
+      list: "Liste",
       name: "Frontend",
-      // imageUrl: project2,
+      imageUrl: [html, css, gh, bt, js, node, sass, lreact]
+      
     },
     {
       id: 2,
+      list: "Liste",
       name: "Backend",
-      imageUrl: project1,
+      imageUrl: [firebase, express, mysql, mongoDB]
     },
 
   ];
@@ -26,11 +40,11 @@ const Services = () => {
       exit={{ scaleY: 0 }}
     >
       <div className="services">
-        <h2>Services</h2>
-        <div className="wrapper">
+        <h2>Junior-Erfahrung</h2>
+        <div className="wrapper ">
           {serviceList.map((item) => {
             return (
-              <motion.div
+              <motion.div className="servicesParent"
                 key={item.id}
                 initial={{ opacity: 0 }}
                 animate={{
@@ -42,20 +56,16 @@ const Services = () => {
                   transition: { duration: 0.5 },
                 }}
               >
-                 <Card>
-                  <Card.Img variant="top" src={item.imageUrl} />
-                  <Card.Body>
-                    <Card.Title>{item.name}</Card.Title>
-                    <ul>
-                      <li> HTML</li>
-                      
-                    </ul>
-                  </Card.Body>
-                </Card> 
-
-
-              </motion.div>
-              
+                 <h2>{item.name}</h2>
+                  {item.imageUrl.map((logoPics)=> { 
+                  return (
+                  <Card className="servicesTitel"> 
+                    <Card.Img variant="top" src={logoPics}/>
+                 
+                </Card> )
+                  })}
+                  
+              </motion.div>              
             );
           })}
         </div>

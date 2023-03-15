@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   let activeStyle = {
@@ -41,7 +41,7 @@ const Header = () => {
                 style={({ isActive }) => (isActive ? activeStyle : undefined)}
                 className="nav-link"
               >
-                Services
+                Experience
               </NavLink>
               
               <NavLink
