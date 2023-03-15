@@ -20,7 +20,7 @@ const Projects = () => {
       id: 2,
       name: "Erstes Portfolio",
       imageUrl: project2,
-      githubURL: "https://github.com/StenderKlaus/Portfolio-KS",
+      githubURL: "https://portfolio-ks.vercel.app/#home",
     },
     {
       id: 3,
@@ -71,14 +71,15 @@ const Projects = () => {
               }}
               key={item.id}
             >
-              <Card>
+              <a href={item.githubURL} target="_blank" rel="noreferrer">
+              <Card >
                 <Card.Img variant="top" src={item.imageUrl} />
                 <Card.Body>
                   <Card.Title>{item.name}</Card.Title>
-                  <button onclick={"item.githubURL"}> GitHub-Link </button>
                 </Card.Body>
                 
               </Card>
+              </a>
               
             </motion.div>
           );

@@ -185,20 +185,26 @@
     height: 100vh; 
   }
   .services h2 {
-  padding-top: 8rem;
+  padding-top: 2rem;
+  text-align: center;
+  grid-row: 1;
+  grid-column: 1/-1;
   }
 
   .servicesParent {
-  display: flex;
-  flex-wrap: wrap;
-  gap:2rem;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(5, minmax(1rem, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  gap:0.5rem;
   margin-top: 2rem;
   margin-bottom: 3rem;
   }
 
   .card.servicesTitel {
-  width: 64px;
-  height: 64px;
+    margin-top: 2rem;
+  width: 58px;
+  height: 58px;
 
   }
 

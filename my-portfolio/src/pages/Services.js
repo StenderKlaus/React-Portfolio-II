@@ -14,6 +14,9 @@ import firebase from "../images/logo/firebase.png";
 import express from "../images/logo/express.png";
 import mongoDB from "../images/logo/mongodb.png";
 import mysql from "../images/logo/mysql.png";
+import jest from "../images/logo/jest.png";
+import git from "../images/logo/git.png";
+import tailwind from "../images/logo/tailwind.png";
 
 const Services = () => {
   const serviceList = [
@@ -21,14 +24,14 @@ const Services = () => {
       id: 1,
       list: "Liste",
       name: "Frontend",
-      imageUrl: [html, css, gh, bt, js, node, sass, lreact]
+      imageUrl: [html, css, gh, bt, js, node, sass, lreact, git, tailwind]
       
     },
     {
       id: 2,
       list: "Liste",
       name: "Backend",
-      imageUrl: [firebase, express, mysql, mongoDB]
+      imageUrl: [firebase, express, mysql, mongoDB, jest]
     },
 
   ];
@@ -55,16 +58,14 @@ const Services = () => {
                   scale: 1.1,
                   transition: { duration: 0.5 },
                 }}
-              >
-                 <h2>{item.name}</h2>
-                  {item.imageUrl.map((logoPics)=> { 
-                  return (
+              >                
+                 <h2>{item.name}</h2>                 
+                  {item.imageUrl.map((logoPics)=> 
+                  (
                   <Card className="servicesTitel"> 
-                    <Card.Img variant="top" src={logoPics}/>
-                 
-                </Card> )
-                  })}
-                  
+                    <Card.Img variant="top" src={logoPics}/>                 
+                  </Card> )
+                  )}                  
               </motion.div>              
             );
           })}
