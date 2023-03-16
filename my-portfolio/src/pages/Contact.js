@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { Button, Col, Row, Form, ListGroup } from "react-bootstrap";
+import { Col, Row, Form, ListGroup } from "react-bootstrap";
 import emailjs from "emailjs-com";
 
 
@@ -63,8 +63,7 @@ const form = useRef();
         <Col>
           <div className="contact-data">
             <p>
-              Möchten Sie mit mir über eins meiner Projekte sprechen? — email an
-              stender.klaus@yahoo.de.
+              Möchten Sie mit mir über eins meiner Projekte sprechen? — email an <a href="mailto: stender.klaus@yahoo.de" target="_blank" rel="noreferrer">stender.klaus@yahoo.de</a>.
             </p>
             <p>Ich kann Ihnen helfen, eine Website zu gestalten, ein neues Produkt zu entwerfen, ein bestehendes Produkt zu verbessern, ein starkes Designsystem aufzubauen, Erstellung von Websites für Ihr Unternehmen.
             </p>
@@ -74,13 +73,13 @@ const form = useRef();
             
               <ListGroup horizontal>
                 <ListGroup.Item>
-                  <a href="https://github.com/StenderKlaus">Github </a>
+                  <a href="https://github.com/StenderKlaus" target="_blank" rel="noreferrer">Github </a>
                </ListGroup.Item>
                <ListGroup.Item>
-                 <a href="https://www.linkedin.com/in/klaus-stender-7ba879266/">Linkedin</a>
+                 <a href="https://www.linkedin.com/in/klaus-stender-7ba879266/" target="_blank" rel="noreferrer">Linkedin</a>
                </ListGroup.Item>
                <ListGroup.Item>
-                 <a href="https://app.instaffo.com/candidate/profile">
+                 <a href="https://app.instaffo.com/candidate/profile" target="_blank" rel="noreferrer">
                    Instaffo
                  </a>
                </ListGroup.Item>

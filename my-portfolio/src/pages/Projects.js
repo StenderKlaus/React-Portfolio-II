@@ -12,37 +12,43 @@ const Projects = () => {
   const projectList = [
     {
       id: 1,
-      name: " Tribute Page über Glenn Miller",
+      name: "Tribute Page über Glenn Miller",
+      name2: "(Einzel-Projekt)",
       imageUrl: project1,
       githubURL: "https://github.com/StenderKlaus/newtribute",
     },
     {
       id: 2,
       name: "Erstes Portfolio",
+      name2: "(Einzel-Projekt)",
       imageUrl: project2,
       githubURL: "https://portfolio-ks.vercel.app/#home",
     },
     {
       id: 3,
       name: "Semicolons - Linksammlung",
+      name2: "(Einzel-Projekt)",
       imageUrl: project3,
       githubURL: "https://github.com/MarcelVoigt92/The-Semicolons-Link-Sammlung",
     },
     {
       id: 4,
       name: "Cooking App",
+      name2: "(Einzel-Projekt)",
       imageUrl: project4,
       githubURL: "https://github.com/StenderKlaus/lecook---cooking-App",
     },
     {
       id: 5,
       name: "Musik Player App",
+      name2: "(Gruppen-Projekt)",
       imageUrl: project5,
       githubURL: "https://github.com/Hosam89/GIGA-CHAD",
     },
     {
       id: 6,
       name: "React Weather App",
+      name2: "(Gruppen-Projekt)",
       imageUrl: project6,
       githubURL: "https://github.com/StenderKlaus/Weather_APP/upload",
     },
@@ -75,7 +81,7 @@ const Projects = () => {
               <Card >
                 <Card.Img variant="top" src={item.imageUrl} />
                 <Card.Body>
-                  <Card.Title>{item.name}</Card.Title>
+                  <Card.Title>{item.name} <br></br> {item.name2}</Card.Title>
                 </Card.Body>
                 
               </Card>
