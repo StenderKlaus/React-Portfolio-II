@@ -14,7 +14,4 @@ root.render(
   </React.StrictMode>
 );
 
-// Wenn Sie mit der Leistungsmessung in Ihrer Anwendung beginnen möchten, übergeben Sie eine Funktion
-// zur Protokollierung der Ergebnisse (zum Beispiel: reportWebVitals(console.log))
-// oder senden Sie sie an einen Analyse-Endpunkt. Erfahren Sie mehr: https://bit.ly/CRA-vitals
 reportWebVitals();

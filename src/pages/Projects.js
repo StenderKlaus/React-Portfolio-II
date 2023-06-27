@@ -7,6 +7,7 @@ import project3 from "../images/project3.jpg";
 import project4 from "../images/project4.jpg";
 import project5 from "../images/project5.jpg";
 import project6 from "../images/project6.jpg";
+import project7 from "../images/F-Projekt.jpg";
 
 const Projects = () => {
   const projectList = [
@@ -51,6 +52,14 @@ const Projects = () => {
       name2: "(Gruppen-Projekt)",
       imageUrl: project6,
       githubURL: "https://github.com/StenderKlaus/Weather_APP/upload",
+    },
+    {
+      id: 7,
+      name: "Semicolons Web-Blog",
+      name2: "(Gruppen-Projekt)",
+      imageUrl: project7,
+      githubURL: "https://github.com/StenderKlaus/Semi-II",
+      liveVersion: "https://react-portfolio-ii.vercel.app/projects",
     },
   ];
 
